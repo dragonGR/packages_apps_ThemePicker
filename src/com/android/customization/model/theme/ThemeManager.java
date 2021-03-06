@@ -74,7 +74,9 @@ public class ThemeManager implements CustomizationManager<ThemeBundle> {
 
     @Override
     public boolean isAvailable() {
-        return mOverlayManagerCompat.isAvailable() && mProvider.isAvailable();
+        //return mOverlayManagerCompat.isAvailable() && mProvider.isAvailable();
+        // Themes are handled from AICP Extras
+        return false;
     }
 
     @Override
